@@ -47,7 +47,7 @@ $glaucous: hsla(224%, 36%, 56%, 1);
   // padding-top: 2em;
   // background: linear-gradient(to bottom, #eee, #ff0 300%);
   background: linear-gradient(to bottom, #fff, #fff 30%, #ff0 125%);
-  // min-height: 100vh;
+  min-height: 50vh;
   padding-top: 2em;
   padding-bottom: 2em;
   color: black;
@@ -161,7 +161,7 @@ nav {
 }
 
 #top-img {
-  background-image: url(/wp-content/themes/dialed/assets/images/track-satellite-1.jpg);
+  background-image: url(/wp-content/themes/dialed/assets/images/track.jpg);
   background-size: cover;
   background-position: top left;
   height: 6em;

@@ -6142,6 +6142,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   background: -webkit-linear-gradient(top, #fff, #fff 30%, #ff0 125%);
   background: -moz-linear-gradient(top, #fff, #fff 30%, #ff0 125%);
   background: linear-gradient(to bottom, #fff, #fff 30%, #ff0 125%);
+  min-height: 50vh;
   padding-top: 2em;
   padding-bottom: 2em;
   color: black; }
@@ -6209,7 +6210,7 @@ nav {
     color: black; }
 
 #top-img {
-  background-image: url(/wp-content/themes/dialed/assets/images/track-satellite-1.jpg);
+  background-image: url(/wp-content/themes/dialed/assets/images/track.jpg);
   background-size: cover;
   background-position: top left;
   height: 6em; }
