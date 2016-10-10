@@ -1,0 +1,178 @@
+/*!
+Theme Name: dialed
+Author: @braden337
+Author URI: https://railingcorners.com
+Description: A theme for His 956 Facility
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dialed
+*/
+
+@import 'bootstrap';
+@import 'bootswatch';
+
+// * { margin: 0; padding: 0; }
+
+/* Coolors Exported Palette - coolors.co/000000-ffffff-322a26-454b66-677db7 */
+
+/* HSL */
+$black: hsla(0%, 0%, 0%, 1);
+$white: hsla(0%, 0%, 100%, 1);
+$bistre: hsla(20%, 14%, 17%, 1);
+$independence: hsla(229%, 19%, 34%, 1);
+$glaucous: hsla(224%, 36%, 56%, 1);
+
+@mixin breakpoint($point) {
+  @if $point == papa {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == mama {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == baby {
+    @media (max-width: 650px)  { @content; }
+  }
+}
+
+// html { min-height: 100%; }
+
+// body {
+//   background-size: cover;
+//   background-position: top;
+//   background: linear-gradient(to right, white, red);
+// }
+
+#site-content {
+  // padding-top: 2em;
+  // background: linear-gradient(to bottom, #eee, #ff0 300%);
+  background: linear-gradient(to bottom, #fff, #fff 30%, #ff0 125%);
+  // min-height: 100vh;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: black;
+  article {
+    margin-bottom: 2em;
+    h1, h4 {
+      margin-top: 0;
+      color: black;
+    }
+    h1 {
+      @include breakpoint(baby) {
+        font-size: 2.75em;
+      }
+    }
+    blockquote {
+      border-color: inherit;
+      margin-left: 1em;
+    }
+  }
+
+  img[class*="wp-image-"] {
+    @extend .img-responsive;
+    margin: 0 auto;
+  }
+
+  #sidebar {
+    color: white;
+    a {
+      color: $brand-primary;
+    }
+  }
+
+}
+
+// .pod {
+//   background-color: white;
+//   border-radius: 1em;
+//   padding: 3em;
+//   margin-top: 2em;
+//   h1 {
+//     margin-top: 0;
+//   }
+// }
+
+.logo {
+  height: 4em;
+  // margin: 10px;
+}
+
+.navbar {
+  padding: 1em;
+  line-height: 4em;
+  margin-bottom: 0;
+}
+
+.navbar-header {
+  // height: 4em;
+  button {
+    margin-top: 1em;
+  }
+}
+
+#primary-menu {
+  // height: 4em;
+  // line-height: 4em;
+  li {
+    @include breakpoint(baby) {
+      height: 2.5em;
+    }
+    a {
+      height: 100%;
+      line-height: 2.5em;
+    }
+  }
+}
+
+.navbar-collapse {
+  box-shadow: none;
+  border: none;
+}
+nav {
+  margin: 0;
+}
+.jumbotron {
+  background-image: url(/wp-content/themes/dialed/assets/images/home-slider-jesse-3.jpg);
+  background-size: cover;
+  background-position: top center;
+  margin-bottom: 0;
+  .container {
+    // h1 {
+    //   margin-bottom: 0;
+    // }
+    // h2 {
+    //   margin-top: .2em;
+    // }
+    h1 {
+      display: inline-block;
+      background-color: yellow;
+      color: black;
+      padding: .2em .5em;
+      @include breakpoint(baby) {
+        font-size: 2.25em;
+      }
+    }
+    .yellow {
+      padding: .25em .5em;
+      background-color: yellow;
+      color: black;
+    }
+  }
+}
+
+#top-img {
+  background-image: url(/wp-content/themes/dialed/assets/images/track-satellite-1.jpg);
+  background-size: cover;
+  background-position: top left;
+  height: 6em;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  // font-family: monospace;
+  padding: 3em 0;
+  .tele {
+    color: inherit;
+  }
+}
