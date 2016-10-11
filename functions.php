@@ -33,10 +33,24 @@ add_action( 'widgets_init', 'dialed_widgets_init' );
 function dialed_scripts() {
   wp_enqueue_style( 'dialed-style', get_stylesheet_uri() );
 
-  wp_enqueue_script('jquery');
-
-  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/javascripts/bootstrap.min.js', array('jquery'), '20161009', true );
-  wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/javascripts/main.js', array('jquery', 'fitvid'), '20161009', true );
+  wp_enqueue_script( 'bootstrap',
+                      get_template_directory_uri() . '/assets/javascripts/bootstrap.min.js',
+                      array('jquery-core'),
+                      '20161009',
+                      true
+  );
+  wp_enqueue_script( 'main',
+                      get_template_directory_uri() . '/assets/javascripts/main.js',
+                      array('jquery-core'),
+                      '20161010',
+                      true
+  );
+  wp_enqueue_script( 'fitvids',
+                      get_template_directory_uri() . '/assets/javascripts/jquery.fitvids.js',
+                      array('jquery-core'),
+                      '20161010',
+                      true
+  );
 
   // if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
   //   wp_enqueue_script( 'comment-reply' );

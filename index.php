@@ -1,4 +1,7 @@
-<?php get_header(); if (is_front_page()) :?>
+<?php get_header(); ?>
+
+
+<?php if (is_front_page()) :?>
   
 <div class="jumbotron">
   <div class="container">
@@ -13,17 +16,21 @@
 
   <div id="top-img" class="container-fluid">
     <div class="col-xs-12">
-      &nbsp;
+      <h2><?php the_title(); ?></h2>
     </div>
   </div>
 
 <?php endif; ?>
 
 <div id="site-content" class="container-fluid">
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <article class="col-xs-12<?php echo (is_front_page() ? ' col-md-8' : ''); ?>">
-      <h1><?php the_title() ?></h1>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      
+      <?php if (is_front_page()): ?>
+        <h2><?php the_title() ?></h2>
+      <?php endif; ?>
+      
       <?php the_content(); ?>
 
   <?php endwhile; else : ?>

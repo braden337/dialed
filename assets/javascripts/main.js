@@ -1,4 +1,8 @@
+/* global jQuery */
+
+var $ = jQuery;
+
 $(document).ready(function(){
-  // Target your .container, .wrapper, .post, etc.
-  $(".embed-youtube").fitVids();
+  // console.log( "Hello lol from main.js\n jQuery version: " + $.fn.jquery );
+  $("article").fitVids();
 });

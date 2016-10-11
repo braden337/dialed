@@ -66,9 +66,8 @@ gulp.task('browser-sync', function() {
     //initialize browsersync
     browserSync.init(files, {
     //browsersync with a php server
-    proxy: "localhost:8888",
-    //notify: false,
-    //browser: ['google chrome']
+    // proxy: "localhost:8888", // Uncomment on MacOS
+    port: 8081, // Uncomment on Cloud9
     });
 });
  
@@ -93,7 +92,8 @@ gulp.task('watch', function () {
  
 // Default task to be run with `gulp`
 // Removed tasks ['mamp', 'images', 'sass', 'browser-sync', 'lint', 'scr    ipts', 'watch']
-gulp.task('default', ['mamp', 'images', 'sass', 'browser-sync', 'watch'], function () {
+// gulp.task('default', ['mamp', 'images', 'sass', 'browser-sync', 'watch'], function () { // Uncomment MacOS
+gulp.task('default', ['images', 'sass', 'browser-sync', 'watch'], function () { // Uncomment Cloud 9
     gulp.watch("assets/stylesheets/**/*.scss", ['sass']);
 });
 
