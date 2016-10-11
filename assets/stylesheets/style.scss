@@ -50,10 +50,10 @@ $glaucous: hsla(224%, 36%, 56%, 1);
   min-height: 50vh;
   padding-top: 2em;
   padding-bottom: 2em;
-  color: black;
   article {
     margin-bottom: 2em;
-    h1, h4 {
+    color: black;
+    h1, h2, h3, h4, h5, h6 {
       margin-top: 0;
       color: black;
     }
