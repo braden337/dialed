@@ -36,7 +36,6 @@ function dialed_scripts() {
   wp_enqueue_script('jquery');
 
   wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/javascripts/bootstrap.min.js', array('jquery'), '20161009', true );
-  wp_enqueue_script( 'fitvid', get_template_directory_uri() . '/assets/javascripts/jquery.fitvids.js', array('jquery'), '20161009', true );
   wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/javascripts/main.js', array('jquery', 'fitvid'), '20161009', true );
 
   // if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
