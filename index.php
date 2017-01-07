@@ -6,8 +6,8 @@
 <div class="jumbotron">
   <div class="container">
     <!-- <h1>His 956 Facility</h1> -->
-    <h1>2016 MX Camps</h1>
-    <p><span class="yellow">Oct 29-30 &amp; Dec 27-28</span></p>
+    <h1>Winter MX Camp</h1>
+    <p><span class="yellow">December 26-28</span></p>
     <p><a class="btn btn-primary btn-lg" href="/mx-camp/" role="button">Reserve your spot!</a></p>
   </div>
 </div>

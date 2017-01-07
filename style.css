@@ -6200,14 +6200,16 @@ nav {
     display: inline-block;
     background-color: yellow;
     color: black;
-    padding: .2em .5em; }
+    padding: 0.2em 0.5em; }
     @media (max-width: 650px) {
       .jumbotron .container h1 {
         font-size: 2.25em; } }
   .jumbotron .container .yellow {
-    padding: .25em .5em;
+    padding: 0.25em 0.5em;
     background-color: yellow;
     color: black; }
+  .jumbotron .container .smaller-yellow {
+    padding: 0.25em 2em; }
 
 #top-img {
   background-image: url(/wp-content/themes/dialed/assets/images/track.jpg);
