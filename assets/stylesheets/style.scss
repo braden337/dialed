@@ -144,21 +144,45 @@ nav {
     //   margin-top: .2em;
     // }
     h1 {
+      font-family: Arial;
       display: inline-block;
       background-color: yellow;
       color: black;
-      padding: 0.2em 0.5em;
+      padding: 1rem 2rem;
+      margin: 0.5rem 0;
+      font-weight: bold;
       @include breakpoint(baby) {
         font-size: 2.25em;
       }
     }
+    h3 {
+      font-family: Arial;
+      display: inline-block;
+      background-color: yellow;
+      color: black;
+      padding: 1rem 2rem;
+      margin: 0.5rem 0;
+      font-weight: bold;
+      @include breakpoint(baby) {
+        // font-size: 2.25rem;
+      }
+    }
     .yellow {
-      padding: 0.25em 0.5em;
+      font-family: Arial;
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin: 0.5rem 0;
       background-color: yellow;
       color: black;
     }
     .smaller-yellow {
       padding: 0.25em 2em;
+    }
+    p {
+      margin: 0.5rem 0;
+      a.btn {
+        margin: 0.5rem 0;
+      }
     }
   }
 }
